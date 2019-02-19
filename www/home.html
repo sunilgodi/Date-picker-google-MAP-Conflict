@@ -1,0 +1,81 @@
+	<div id="headerBlock" class="headernaimate" style="display:inline-flex;align-items:center;position:fixed;z-index:99;">	
+		<img class="circle headernaimate" id="image_div"  style="display:table-cell;" src="profile.jpg" alt="imag"/>
+		<div id ="headertxt" class="headernaimate">
+			<p id="balance" style="color:#fff;font-size:20px;margin:0;line-height:26px;font-family:Roboto-Condensed;transform-origin:0 0;"></p>
+			<p id="profileName" style="color:#fff;opacity:0.74;font-size:15px;margin:0;line-height:20px;font-family:Roboto;"></p>
+		</div>
+	</div>
+	
+	<span class="tss-headerSpan waves-effect waves-light" onclick="openNav();">
+			<i class="mdi mdi-menu mdi-24px" style="color:#fff;font-size:2rem;"></i>
+    </span>
+    <div id="navDiv" class="tss-background-primary" style="height:200px;width:100%;">
+    	<!--nav style="box-shadow:none;">
+			<div id="navDiv" class="nav-wrapper tss-background-primary" >			
+				
+			</div>
+		</nav-->
+    </div>
+	<!--div id="NavFixedDiv" class="tss-background-primary navFixedClass " style="height:56px;width:100%">&nbsp;</div>
+	<div id="preNav" class="tss-background-primary" style="z-index:999">&nbsp;</div>
+	<div class="" >
+		<nav style="box-shadow:none;">
+			<div id="navDiv" class="nav-wrapper tss-background-primary" >			
+				<button id="walletBtn" class="btn-floating btn-large waves-effect waves-light waves-circle tss-homefloating">
+					<i class="mdi mdi-wallet mdi-24px" style="color:#000;opacity:0.54;font-size:1.7rem"></i>
+				</button>
+			</div>
+		</nav>
+	</div!-->
+
+ 	 	
+<div id="mainDiv" onclick="closeNav();"> </div>
+
+<div id="mySidenav" class="z-depth-2 sidenav sideNavAnimate">
+   
+    <div class="waves-effect tss-sidenavitem" style="padding-left:16px;"> 
+        <i class="mdi mdi-account-location mdi-24px tss-color-primary"></i> 
+        <span class="tss-sidenavlabel">Shop locator</span>
+    </div>
+      <div class="waves-effect tss-sidenavitem" style="padding-left:16px;">
+        <i class="mdi mdi-clipboard-text mdi-24px tss-color-primary"></i> 
+        <span class="tss-sidenavlabel">Upload Docs</span>
+    </div>
+   
+</div>		
+		
+<div id="profileDiv" class="row" style="position:fixed;top:35%;left:10px;margin:auto;display:none;z-index:2000;width:90%">
+	<div class="col s12 m5">
+		<div class="card-panel" style="padding:0px;width:100%;margin-bottom:0px">
+			<div style="padding:10px 16px;border-bottom:2px solid #F15625;">
+				<p class="tss--text-title" style="width=100%;margin:auto;vertical-align:center"> Profile photo</p>
+			</div>
+			<ul class="collection" style="margin:0">
+				<li class="collection-item" onclick="capturePhotoEdit();"><i class="mdi mdi-camera mdi-24px tss-color-primary"></i>&nbsp; Camera</li>
+				<li class="collection-item" onclick="getPhoto();"><i class="mdi mdi-image mdi-24px tss-color-primary"></i>&nbsp; Gallery</li>
+				<li class="collection-item" onclick="removePhoto()"><i class="mdi mdi-delete mdi-24px tss-color-primary"></i>&nbsp; Remove photo</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--div id="serviceBody" class="tss-padding16side">
+	
+	</div>
+</div-->
+<div style="height:auto;margin:auto;width:100% ">
+<div id="wrapper" class="" style="width:100%;position: absolute;z-index: 1;bottom: 0;overflow: hidden;background:#fff">
+	<div id="scroller" class="scrollerClass" style="transform: translate(0px, 0px) translateZ(0px);">
+		<div id="Insidediv" style="background:#fff">
+            <div id="preNav" class="tss-background-primary" style="height:100px;border:none;position:relative">
+            	<button id="walletBtn" class="btn-floating btn-large waves-effect waves-light waves-circle tss-homefloating">
+					<i class="mdi mdi-wallet mdi-24px" style="color:#000;opacity:0.54;font-size:1.7rem"></i>
+				</button>
+            </div>
+			<div id="serviceBody" class="tss-padding16side">
+				<div id="noService" class="tss-color-primary" style="display:flex;align-items:center;justify-content:center;font-size:24px;font-family:Roboto;opacity:0.87;margin-top:30px">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    </div>

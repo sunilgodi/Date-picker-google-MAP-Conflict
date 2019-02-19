@@ -1,0 +1,38 @@
+<div class="navbar-fixed">
+			<nav>
+				<div id="navDiv" class="nav-wrapper tss-background-primary" > 
+					<div class="row" style="margin:auto;padding:0;height:100%">						
+						<div class="col s12" style="padding:0 22px 0 0;height:100%">							
+							<div style="padding-left:12px;" style="mertical-align:middle;margin:auto">
+								<p class="tss--text-subhead" style="color:#FFF;vertical-align:middle;opacity:1;text-align:center;font-weight:700">Login</p>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</nav>
+		</div>	
+
+<div class="tss-padding16all">
+	<div class="row">
+		<div class="input-field col s12 tss-nopadding" >
+			<input id="msisdn" type="tel" pattern="[0-9]{7,7}" class="validate" maxlength="7" >
+			<label id="msisdnLabel" for="msisdn">Enter mobile No.</label>
+		</div>
+		
+		<div class="input-field col s10 tss-nopadding">
+			<input id="Pin" type="tel" maxlength="4" class="validate" onfocus="changeEyeBorder('#eyeImgDiv')" onblur="changeBorderEyerev('#pinLabel','#eyeImgDiv')" />
+			<label id="pinLabel" for="Pin">Enter PIN</label>
+		</div>
+		<div id="eyeImgDiv" class="input-field col s2 right-align tss-nopadding" style="margin-top:29px;border-bottom: 1px solid #9e9e9e;transition: all 0.3s;" onclick="toggle_password('#Pin','#eyeImg');">
+			<i class="mdi mdi-eye-off mdi-24px" style="color:#000;opacity:0.54" id="eyeImg"></i>
+		</div>
+	</div>
+    <br>
+	<div class="tss-centered">
+		<button class="btn waves-effect waves-light waves-ripple tss-loginbtn">LOGIN</button>
+	</div>  
+		<br>
+		<br>
+
+</div>	
+<div id="keyboardPad" style="height:200px">&nbsp;</div>

@@ -1,0 +1,97 @@
+<div class="navbar-fixed">
+	<nav>
+		<div id="navDiv" class="nav-wrapper tss-background-primary"> 
+			<div class="row" style="margin:auto;padding:0;height:100%">
+				<div class="col s2" style="padding:0">
+					<span class="tss-headerSpan waves-effect waves-light">
+						<i class="mdi mdi-arrow-left mdi-24px" style="vertical-align:middle;display: inline;font-size:1rem;height:100%"></i>
+					</span>
+				</div>
+				<div class="col s10" style="padding:0 22px 0 0;height:100%">
+					<div style="padding-left:12px;">
+						<i id="service_image" class="mdi mdi-24px mdi-account-location" style="vertical-align:middle;display: inline;"></i>
+						<span id="service_header" class="tss--text-subhead" style="color:#FFF;vertical-align:middle;opacity : 1;"> Shop locator</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
+<br>
+<div class="tss-padding16side"> 
+	<div class="row" style="margin-bottom:0">
+		<div class="input-field col s5 tss-nopadding" > 
+			<!--select id="atollList" class="browser-default"> </select-->
+            <div class="select-wrapper">
+                <span class="caret">▼</span>
+                <input id="atolListWrapper" class="tss-selectWrapper" type="text" readonly="true" value="Select Atoll">
+                <select id="atollList" class="browser-default" style="position: absolute;left: -1000px;"> 
+                <option>Atoll</option>
+                      <option>Atoll2</option>
+                      <option>Atoll3</option>
+                </select> 
+            </div>
+			<label class="active">Select Atoll</label>
+		</div>
+		<div class="col s2 tss-nopadding"></div>
+		<div class="input-field col s5 tss-nopadding"> 
+            <div class="select-wrapper">
+                <span class="caret">▼</span>
+                <input id="islandListWrapper" class="tss-selectWrapper" type="text" readonly="true" value="Select Island" disabled="true">
+                <select id="islandList" class="browser-default" style="position: absolute;left: -1000px;"> 
+                <option>Island1</option>
+                    <option>Island2</option>
+                        <option>Island</option>    
+                </select> 
+            </div>
+            
+			<!--select id="islandList" class="browser-default" disabled> 
+				<option value='-1' disabled selected>Select Island</option>
+			</select--> 
+			<label class="active">Select Island</label>
+		</div>
+	</div>
+	<div class="row" id="filterBlock" style="display:none">
+		<div class="input-field col s10 tss-nopadding">
+			<input id="filter" type="text" class="validate" onfocus="changeEyeBorder('#filterImgDiv');" onblur="changeBorderEyerev('#filterLabel','#filterImgDiv')"/>
+			<label id="filterLabel" for="filter">Search</label>
+		</div>
+		<div id="filterImgDiv" class="input-field col s2 right-align tss-nopadding modal-trigger" style="margin-top:29px;border-bottom: 1px solid #9e9e9e;transition: all 0.3s;" href='#mapSettingModal'>
+			<i class="mdi mdi-filter mdi-24px" style="color:#000;opacity:0.54" onclick="" id="filterImage"></i>
+		</div>
+	</div>
+</div>
+
+
+<ul id="agentList" class="collection" style="margin-bottom:0">
+	<!--li class="collection-item" style="padding:16px;">
+		<span style="opacity:0.87;font-weight:700;font-size:16px">
+			<i class="mdi mdi-map-marker mdi-24px" style="vertical-align:middle;"></i>Sunil 123
+		</span>
+		<span class="right" style="color:deepskyblue;opacity:.87;font-weight:700">View in maps</span> 
+		<br>
+		<span style="opacity:0.87;font-weight:700">Address 1234</span>
+	</li-->
+</ul>
+
+<div id="mapSettingModal" class="modal bottom-sheet">
+	<div class="modal-content">
+		<span id="mapSettingClose" class="modal-close waves-effect waves-light">Close</span>
+		<h5>Shop Type</h5>
+		<p>
+			<input type="checkbox" class="filled-in red mapSettingCheckBox " id="mapSettingCheck_3" checked="checked" data-type="3"/>
+			<label for="mapSettingCheck_3">Dhiraagu shop</label>
+		</p>
+		<p>
+			<input type="checkbox" class="filled-in blue mapSettingCheckBox" id="mapSettingCheck_4" checked="checked" data-type="4"/>
+			<label for="mapSettingCheck_4">Agent</label>
+		</p>
+		<p>
+			<input type="checkbox" class="filled-in green mapSettingCheckBox" id="mapSettingCheck_6" checked="checked" data-type="6" />
+			<label for="mapSettingCheck_6">Merchant</label>
+		</p>
+	</div>
+</div>
+
+<i id="gpsLocatorSwitch" class="mdi mdi-crosshairs-gps mdi-24px" style="position:absolute;top:8px;right:16px;color: white;z-index:99999;padding:10px;"></i>
+  

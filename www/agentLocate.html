@@ -1,0 +1,54 @@
+<div class="navbar-fixed">
+	<nav>
+		<div id="navDiv" class="nav-wrapper tss-background-primary"> 
+			<div class="row" style="margin:auto;padding:0;height:100%">
+				<div class="col s2" style="padding:0">
+					<span class="tss-headerSpan waves-effect waves-light">
+						<i class="mdi mdi-arrow-left mdi-24px" style="vertical-align:middle;display: inline;font-size:1rem;height:100%"></i>
+					</span>
+				</div>
+				<div class="col s10" style="padding:0 22px 0 0;height:100%">
+					<div style="padding-left:12px;">
+						<i id="service_image" class="mdi mdi-24px mdi-account-location" style="vertical-align:middle;display: inline;"></i>
+						<span id="service_header" class="tss--text-subhead" style="color:#FFF;vertical-align:middle;opacity : 1;"> Shop locator</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
+<div id="map_canvas">
+	<a id="map_setting" class='modal-trigger' href='#mapSettingModal'>
+		<i class="mdi mdi-settings mdi-24px" style="position:relative;top:2px;"></i>
+	</a>
+	<div id="map_redirect" data-location="">
+        <span id="map_redirect_navigate">
+		  <i class="mdi mdi-directions mdi-24px" style="position:relative;color:#4a89f3;" ></i>
+        </span>
+        <span id="map_redirect_map" >
+            <img src="./img/mapIcon.png" style="width:24px;top:2px" />
+        </span>
+	</div>
+	<p id="fillerText"></p>
+</div>
+<div id="mapSettingModal" class="modal bottom-sheet">
+	<div class="modal-content">
+		<span id="mapSettingClose" class="modal-close waves-effect waves-light">Close</span>
+		<h5>Display Setting</h5>
+		<p>
+			<input type="checkbox" class="filled-in red mapSettingCheckBox" id="mapSettingCheck_3" checked="checked" data-type="3"/>
+			<label for="mapSettingCheck_3">Dhiraagu shop</label>
+		</p>
+		<p>
+			<input type="checkbox" class="filled-in blue mapSettingCheckBox" id="mapSettingCheck_4" checked="checked" data-type="4"/>
+			<label for="mapSettingCheck_4">Agent</label>
+		</p>
+		<p>
+			<input type="checkbox" class="filled-in green mapSettingCheckBox" id="mapSettingCheck_6" checked="checked" data-type="6" />
+			<label for="mapSettingCheck_6">Merchant</label>
+		</p>
+	</div>
+</div>
+
+<i id="gpsLocatorSwitch" class="mdi mdi-format-list-bulleted mdi-24px" style="position:absolute;top:8px;right:16px;color:white;z-index:99999;padding:10px;"></i>
+  

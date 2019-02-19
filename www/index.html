@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<!--meta http-equiv="Content-Security-Policy" data: blob: cdvphotolibrary:-->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src file: 'unsafe-inline'; media-src 'none'; script-src https://dhiraagupay.dhiraagu.com.mv:*/ file: 'unsafe-inline' 'unsafe-eval'; font-src file:; connect-src https://dhiraagupay.dhiraagu.com.mv:*/  gap: file:; img-src data: file:; child-src gap:;"-->
+    
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src file: 'unsafe-inline'; media-src 'none'; script-src https://dhiraagupay.dhiraagu.com.mv:*/ file: 'unsafe-inline' 'unsafe-eval'; font-src file:; connect-src https://dhiraagupay.dhiraagu.com.mv:*/  gap: file:; img-src data: file:; child-src gap:;"-->
+
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/style.css"  media="screen,projection"/>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript"  src="./js/jquery-2.1.1.js"> </script>
+	<script type="text/javascript"  src="./js/fastclick.js"> </script>
+    <script type="text/javascript"  src="./js/validate.js"> </script>
+    <script type="text/javascript"  src="./js/iscroll-probe.js"></script>
+    <script type="text/javascript"  src="./js/app.js"> </script>
+	<link href="./css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />     
+</head>
+<body>
+	<div id="login" class="centerpage" style="overflow-y:scroll;display:block">
+        
+	</div> <!-- end of login -->
+	<div id="homeWrapper">
+	<div id="home" class="centerpage" style="overflow-y:scroll;display:none">
+		
+	</div> <!-- end of homepage -->
+	</div>
+	
+	<div id="service" class="centerpage" style="overflow-y:scroll;display:none;">
+		
+	</div> <!-- end of service -->
+	
+	<div id="billList" class="centerpage" style="overflow-y:scroll;display:none;">
+		
+	</div> <!-- end of billList -->
+	
+	<div id="lockPage" class="centerpage" style="overflow-y:scroll;display:none;background:white;z-index:9999999999;">
+		
+	</div> <!-- end of lockpage -->
+	
+	<div id="loadingDiv" class="centerpage" style="overflow-y:scroll;display:none;z-index:9999999999999999">
+		<div class="tss-centered" style="background:rgba(0,0,0,0.3);justify-content:center;padding-top:0">
+			<div class="z-depth-2" style="background:white;padding:16px 32px;display:flex;border-radius:2px">
+				<div class="preloader-wrapper active">
+					<div class="spinner-layer spinner-red-only">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+				&nbsp;&nbsp;
+				<span><p id="loadingText" style="vertical-align:middle"> please wait</p></span>
+			</div>
+		</div>
+	</div> <!-- end of loadingDiv -->
+
+
+<div id="loadingOtpDiv" class="centerpage" style="overflow-y:scroll;display:none;z-index:9999999999999999">
+		<div class="tss-centered" style="background:rgba(0,0,0,0.3);justify-content:center;padding-top:0">
+			<div class="z-depth-2" style="background:white;padding:16px 32px;display:flex;border-radius:2px">
+				<div class="preloader-wrapper active">
+					<div class="spinner-layer spinner-red-only">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+				&nbsp;&nbsp;
+				<span><p id="loadingOtpText" style="vertical-align:middle"> Waiting to auto detect OTP... 25</p></span>
+			</div>
+		</div>
+	</div> <!-- end of Smart lock div--->
+                                                                          
+<div id="cameraDiv" class="centerpage" style="overflow-y:scroll;display:none;">
+	<div class="navbar-fixed">
+			<nav>
+				<div id="navDiv" class="nav-wrapper tss-background-primary"> 
+					<div class="row" style="margin:auto;padding:0;height:100%">
+						<div class="col s2" style="padding:0">
+							<span class="tss-headerSpan waves-effect waves-light">
+								<i class="mdi mdi-arrow-left mdi-24px" style="vertical-align:middle;display: inline;font-size:1rem;height:100%"></i>
+							</span>
+						</div>
+						<div class="col s10" style="padding:0 22px 0 0;height:100%">						
+							<div style="padding-left:12px;">
+								<i class="mdi mdi-qrcode-scan mdi-24px" style="vertical-align:middle;display:inline;"></i>
+								<span class="tss--text-subhead" style="color:#FFF;vertical-align:middle;opacity : 1;">&nbsp;Scan & Pay</span>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="QR-background" style="top:0;left:0;width:100%;height:30%;">&nbsp;</div>
+		<div class="QR-background" style="bottom:0;left:0;width:100%;height:30%;">&nbsp;</div>
+		                                  
+		<div class="QR-background" style="top:30%;left:0;bottom:30%;width:15%;">&nbsp;</div>
+		<div class="QR-background" style="top:30%;bottom:30%;right:0;width:15%;">&nbsp;</div>
+		
+		
+		<div class="z-depth-2 tss-scanBox" id= "scanBox">
+			<div class="tss-cameraBar" id="cameraBar">&nbsp</div>
+		</div>
+	</div> 
+ 
+ <script type="text/javascript" src="./js/materialize.min.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<div class="navbar-fixed">
+	<nav>
+		<div id="navDiv" class="nav-wrapper tss-background-primary"> 
+			<div class="row" style="margin:auto;padding:0;height:100%">
+				<div class="col s2" style="padding:0">
+					<span class="tss-headerSpan waves-effect waves-light">
+						<i class="mdi mdi-arrow-left mdi-24px" style="vertical-align:middle;display: inline;font-size:1rem;height:100%"></i>
+					</span>
+				</div>
+				<div class="col s10" style="padding:0 22px 0 0;height:100%">
+					<div style="padding-left:12px;">
+						<i id="service_image" class="mdi mdi-24px mdi-account-card-details" style="vertical-align:middle;display: inline;"></i>
+						<span id="service_header" class="tss--text-subhead" style="color:#FFF;vertical-align:middle;opacity : 1;"> Upload ID card</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
+<br>
+<div id="mainDiv3" onclick="backFn();"></div>
+
+<div class="tss-padding16side">
+	
+
+
+<div class="tss-padding16side"> <div class="divider">&nbsp;</div> </div>
+
+<div id="newUploadBlock">
+	<p style="text-align:center;font-size:16px;font-weight:500">Submit new document</p>
+	<div class="row tss-padding16side" style="margin:auto;">
+		<div class="input-field col s12" style="padding:0">
+			<input id="idNumInput" type="text" maxlength="10" class="validate">
+			<label id="idNumInputLabel" for="to">Enter ID number</label>
+		</div>
+      
+		<div class="input-field col s12" style="padding:0">
+			<input id="idDateInput" type="text" class="validate datepicker" placeholder="dd-mm-yyyy" readonly>
+			<label id="idDateInputlabel" for="amount" class="active">Select Expiry Date</label>
+		</div>
+	</div>
+	<ul class="collection" style="border:0px;margin-bottom:8px">
+		<li class="collection-item avatar" id="kycFront" style="border:0px;">
+			<img src="default_placeholder.png" class="circle" id="kycImg1" alt="Front"></img>
+			<span class="title"><b>ID card Front</b></span>
+			<p id="subStat1">Click here to upload</p>
+			<div class="progress" width="50%" id="progdiv1" style="display:none;">
+				<div class="determinate " style="width: 0%" id="progress1"></div>
+			</div>
+			<a href="#!" class="secondary-content" id="finalStat1"></a>
+		</li>
+		<li class="collection-item avatar" id="kycRear" style="display:none"> 
+			<img src="default_placeholder.png" class="circle" id="kycImg2" alt="Front" ></img>
+			<span class="title" ><b>ID card Back</b></span>
+			<p id="subStat2">Click here to upload</p>
+			<div class="progress" width="50%" id="progdiv2" style="display:none;">
+				<div class="determinate" style="width: 0%" id="progress2"></div>
+			</div>
+			<a href="#!" class="secondary-content" id="finalStat2"></a>
+		</li>
+	</ul>
+	<div class="row" style="color:red;padding-left:16px">
+		<div class="col s12 m12" id="kycHelp">Note : Upload file format .png,.jpeg,.jpg and size less then 1mb.</div>
+	</div>
+	<div style="height:64px"></div>
+	<div class="footer waves-effect waves-light tss-btn-kycUpload" style="display:flex;align-items:center;justify-content:center;">
+		<div class="tss--text-button" id="uploadBtnTxt" style="color:#ffffff">Submit ID card</div>
+	</div>
+</div>
+<div>
+
+
+<div id="kycOptDiv" class="row" style="position:fixed;top:35%;left:10px;margin:auto;display:none;z-index:20000;width:90%">
+	<div class="col s12 m5">
+		<div class="card-panel" style="padding:0px;width:100%;margin-bottom:0px">
+			<div style="padding:10px 16px;border-bottom:2px solid red;">
+				<p class="tss--text-title" style="width=100%;margin:auto;vertical-align:center"> Choose Upload Option</p>
+			</div>
+			<ul class="collection" style="margin:0">
+				<li class="collection-item kycUploadSelect" data-type="1">
+					<i class="mdi mdi-camera mdi-24px tss-color-primary"></i>&nbsp; Camera
+				</li>
+				<li class="collection-item kycUploadSelect" data-type="2">
+					<i class="mdi mdi-image mdi-24px tss-color-primary"></i>&nbsp; Gallery
+				</li>
+				<!--li class="collection-item" onclick="rmPhoto()">
+					<i class="mdi mdi-delete mdi-24px tss-color-primary"></i>&nbsp; Remove photo
+				</li-->
+			</ul>
+		</div>
+	</div>
+</div>
+
